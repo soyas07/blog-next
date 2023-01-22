@@ -1,0 +1,40 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.iconPrimary,
+.iconSecondary {
+    width: 1.21rem;
+    height: 1.21rem;
+}
+
+.iconPrimary {
+    margin-left: 1rem;
+}
+
+.iconSecondary {
+    margin-right: .6rem;
+}
+
+.btnPrimary {
+    height: 3.75rem;
+    border-radius: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-weight: var(--t2-font-weight);
+}
+
+.btnSecondary {
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    opacity: 0.6;
+    color: #000;
+    border: none;
+}
