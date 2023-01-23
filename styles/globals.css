@@ -87,6 +87,11 @@ a {
   text-decoration: none;
 }
 
+.main-container {
+  width: 93%;
+  margin: 0 auto;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

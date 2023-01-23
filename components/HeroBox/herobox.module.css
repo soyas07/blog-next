@@ -1,0 +1,57 @@
+.heroboxContainer {
+    width: 84rem;
+    height: 40rem;
+    display: flex;
+}
+
+.leftBox,
+.rightBox {
+    height: 40rem;
+    width: 50%;
+}
+
+.leftBox {
+    background-color: var(--primary-color);
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    padding: 2.4rem;
+}
+
+.leftBox h1 {
+    margin: 2rem 0;
+    font-size: 4rem;
+    font-weight: var(--t2-font-weight);
+}
+
+.leftBox p {
+    line-height: 1.75rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.rightBox img {
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+}
+
+.recipeBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 17.7rem;
+    margin-bottom: 6.5rem;
+}
+
+.authorRecipeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.badgeIcon {
+    width: 9.375rem;
+    height: 9.375rem;
+    position: absolute;
+    left: 40rem;
+    top: 5rem;
+}
