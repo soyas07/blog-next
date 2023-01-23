@@ -87,6 +87,10 @@ a {
   text-decoration: none;
 }
 
+nav {
+  margin-bottom: 2rem;
+}
+
 .main-container {
   width: 93%;
   margin: 0 auto;

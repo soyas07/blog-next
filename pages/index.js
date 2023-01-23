@@ -3,9 +3,14 @@ import Navbar from '@/components/Navbar/Navbar';
 
 const Home = () => {
     return (
-        <div className='main-container'>
-            <Navbar />
-            <HeroBox />
+        <div>
+            <nav>
+                <Navbar />
+                <hr style={{opacity:"0.2"}} />
+            </nav>
+            <div className='main-container'>
+                <HeroBox />
+            </div>
         </div>
     )
 }
