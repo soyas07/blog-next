@@ -34,6 +34,7 @@
   --primary-bot-margin: 11.43rem;
   --second-bot-margin: 10rem;
   --third-bot-margin: 8.93rem;
+  --fourth-bot-margin: 6.5rem;
 
 }
 
@@ -95,6 +96,7 @@ nav {
   width: 93%;
   margin: 0 auto;
 }
+
 
 /* @media (prefers-color-scheme: dark) {
   html {

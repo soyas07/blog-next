@@ -1,3 +1,4 @@
+import Category from '@/components/Category/Category';
 import HeroBox from '@/components/HeroBox/HeroBox';
 import Navbar from '@/components/Navbar/Navbar';
 
@@ -10,6 +11,7 @@ const Home = () => {
             </nav>
             <div className='main-container'>
                 <HeroBox />
+                <Category />
             </div>
         </div>
     )
