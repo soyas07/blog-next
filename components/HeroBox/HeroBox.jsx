@@ -26,14 +26,14 @@ const HeroBox = () => {
                         text="30 Minutes"
                         icon={timerIcon} 
                         width="8.68rem"
-                        bgcolor='#000'
+                        bgcolor='rgba(0,0,0,0.05)'
                     />
                     <Button 
                         type="secondary"
                         text="Chicken"
                         icon={forkKnifeIcon} 
                         width="7.43rem"
-                        bgcolor='#000'
+                        bgcolor='rgba(0,0,0,0.05)'
                     />
                 </div>
                 <div className={styles.authorRecipeContainer}>
@@ -52,35 +52,9 @@ const HeroBox = () => {
             <div className={styles.rightBox}>
                 <img src={heroImg.src} alt="recipe-feature" width="100%" height="100%" />
             </div>
-            <img src={badgeIcon.src} className={styles.badgeIcon} alt="recipe batch" />
-            {/* <br/>
-            <Button 
-                type="primary"
-                text="Learn More" 
-                width="11.25rem"
-            /><br/>
-            <Button 
-                type="primary"
-                text="View Our Instagram"
-                icon={instagramIcon} 
-                width="14.31rem"
-            /><br/>
-            <Button 
-                type="primary"
-                text="View All Categories"
-                width="12.5rem"
-                bgcolor="#E7FAFE"
-                color="#000"
-            /><br/>
-            
-            <Button 
-                type="secondary"
-                text="Chicken"
-                icon={forkKnifeIcon} 
-                width="7.43rem"
-            /><br/>
-            
-            */}
+            <div className={styles.badgeIconContainer}>
+                <img src={badgeIcon.src} className={styles.badgeIcon} alt="recipe batch" />
+            </div>
         </div>
     )
 }

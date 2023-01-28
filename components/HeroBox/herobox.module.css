@@ -1,12 +1,11 @@
 .heroboxContainer {
-    width: 84rem;
-    height: 40rem;
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8rem;
+    justify-content: space-between;
 }
 
-.leftBox,
 .rightBox {
-    height: 40rem;
     width: 50%;
 }
 
@@ -15,6 +14,7 @@
     border-top-left-radius: 2.5rem;
     border-bottom-left-radius: 2.5rem;
     padding: 2.4rem;
+    width: 50%;
 }
 
 .leftBox h1 {
@@ -29,9 +29,12 @@
     margin-bottom: 1.5rem;
 }
 
+
 .rightBox img {
+    /* width: 50%; */
     border-top-right-radius: 2.5rem;
     border-bottom-right-radius: 2.5rem;
+    height: 100%;
 }
 
 .recipeBtnContainer {
@@ -39,7 +42,7 @@
     align-items: center;
     justify-content: space-between;
     width: 17.7rem;
-    margin-bottom: 6.5rem;
+    margin-bottom: var(--fourth-bot-margin);
 }
 
 .authorRecipeContainer {
@@ -48,10 +51,65 @@
     justify-content: space-between;
 }
 
-.badgeIcon {
-    width: 9.375rem;
-    height: 9.375rem;
+.badgeIconContainer {
     position: absolute;
-    left: 40rem;
-    top: 5rem;
+    margin-left: 38rem;
+    margin-top: 4rem;
+}
+
+.badgeIcon {
+    width: 8.375rem;
+    height: 8.375rem;
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .badgeIconContainer {
+        margin-left: 37rem;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .badgeIconContainer {
+        margin-left: 39rem;
+    }
+
+    .recipeBtnContainer {
+        width: 26rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .heroboxContainer {
+        flex-wrap: wrap;
+    }
+
+    .badgeIcon {
+        display: none;
+    }
+
+    .leftBox,
+    .rightBox {
+        width: 100%;
+    }
+
+    .leftBox {
+        border-top-right-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .rightBox {
+        display: none;
+    }
+
+    .authorRecipeContainer {
+        width: 70%;
+    }
+    
 }

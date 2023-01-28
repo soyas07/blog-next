@@ -1,0 +1,62 @@
+.cardContainer {
+    width: 25rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(231, 249, 253, 1));
+}
+
+.cardContainer:hover {
+    cursor: pointer;
+}
+
+.cardContainer h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+.cardImg {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.cardFeatureImg {
+    width: 23rem;
+    border-radius: 1.5rem;
+}
+
+.likeIcon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    padding: .7rem;
+    margin-top: -15rem;
+    margin-left: 19rem;
+    background-color: white;
+    /* margin-right: -5rem; */
+}
+
+.likeIcon img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.cardIcons {
+    display: flex;
+    /* justify-content: space-between;  */
+    /* flex-wrap: wrap; */
+    width: 16rem;
+    padding: 0.8rem
+}
+
+.featuredContainer img {
+    height: 26rem;
+    width: 25rem;
+}
+
+@media only screen and (max-width: 1240px) {
+    .cardIcons {
+        width: 100%;
+    }
+}
