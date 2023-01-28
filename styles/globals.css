@@ -102,6 +102,40 @@ nav {
   margin: 0 auto;
 }
 
+.recipe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.recipe-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 44.125rem;
+  margin-bottom: 5rem;
+}
+
+.recipe-titles h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.recipe-titles p {
+  font-size: 1rem;
+}
+
+.recipe-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 @media only screen and (max-width: 1500px) {
   html {

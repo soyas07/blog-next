@@ -56,7 +56,7 @@ const Category = () => {
     ]
 
     return (
-        <div>
+        <div className={styles.categoryWrapper}>
             <div className={styles.categoryTitleContainer}>
                 <h2>Categories</h2>
                 <Button 
@@ -68,12 +68,14 @@ const Category = () => {
                 />
             </div>
             <div className={styles.categoryHolder}>
-                {list.map((item,key) => (
-                    <div key={key} className={styles.categoryContainer} style={categories[key]}>
-                        <img src={item.icon.src} alt="breakfast" style={shadow[key]} />
-                        <p>{item.name}</p>
-                    </div>
-                ))}
+                {list.map((item,key) => {
+                    return (
+                        <div key={key} className={styles.categoryContainer} style={categories[key]}>
+                            <img src={item.icon.src} alt="breakfast" style={shadow[key]} />
+                            <p>{item.name}</p>
+                        </div>
+                    );
+                })}
             </div>
         </div>
     )

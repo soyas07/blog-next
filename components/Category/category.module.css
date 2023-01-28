@@ -1,3 +1,7 @@
+.categoryWrapper {
+    margin-bottom: 10rem;
+}
+
 .categoryTitleContainer {
     display: flex;
     justify-content: space-between;
@@ -12,12 +16,13 @@
 
 .categoryHolder {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .categoryContainer {
-    width: 11.25rem;
-    height: 12.625rem;
+    min-width: 11.25rem;
+    min-height: 12.625rem;
     /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(112, 130, 70, 0.1)); */
     border-radius: 1.8rem;
     display: flex;
