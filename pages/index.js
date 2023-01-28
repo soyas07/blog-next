@@ -10,7 +10,7 @@ const Home = () => {
                 <hr style={{opacity:"0.2"}} />
             </nav>
             <div className='main-container'>
-                <HeroBox />
+                {/* <HeroBox /> */}
                 <Category />
             </div>
         </div>
