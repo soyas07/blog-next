@@ -52,7 +52,9 @@ const HeroBox = () => {
             <div className={styles.rightBox}>
                 <img src={heroImg.src} alt="recipe-feature" width="100%" height="100%" />
             </div>
-            <img src={badgeIcon.src} className={styles.badgeIcon} alt="recipe batch" />
+            <div className={styles.badgeIconContainer}>
+                <img src={badgeIcon.src} className={styles.badgeIcon} alt="recipe batch" />
+            </div>
             {/* <br/>
             <Button 
                 type="primary"

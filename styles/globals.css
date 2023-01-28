@@ -92,9 +92,45 @@ nav {
   margin-bottom: 2rem;
 }
 
+.main-wrapper {
+  max-width: 1420px;  
+  margin: 0 auto;
+}
+
 .main-container {
   width: 93%;
   margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 1500px) {
+  html {
+    font-size: 14px;
+  }  
+  
+  .main-wrapper {
+      max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  html {
+    font-size: 11px;
+  }  
+  
+  .main-wrapper {
+      max-width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 10px;
+  } 
+
+  .main-wrapper {
+    max-width: 900px;
+  }
 }
 
 

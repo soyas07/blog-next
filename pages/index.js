@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar/Navbar';
 
 const Home = () => {
     return (
-        <div>
+        <div className='main-wrapper'>
             <nav>
                 <Navbar />
                 <hr style={{opacity:"0.2"}} />
