@@ -26,6 +26,11 @@
     justify-content: space-around;
 }
 
+.categoryContainer img {
+    width: 6rem;
+    height: 6rem;
+}
+
 .categoryContainer p {
     font-weight: var(--t2-font-weight);
 }

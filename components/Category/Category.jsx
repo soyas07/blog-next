@@ -47,7 +47,12 @@ const Category = () => {
     ];
 
     const shadow = [
-        {filter: "drop-shadow(30px 10px 4px #4444dd)"}
+        {filter: "drop-shadow(30px 10px 4px rgba(112, 130, 70, 0.1))"},
+        {filter: "drop-shadow(30px 10px 4px rgba(108, 198, 63, 0.1))"},
+        {filter: "drop-shadow(30px 10px 4px rgba(204, 38, 27, 0.1))"},
+        {filter: "drop-shadow(30px 10px 4px rgba(240, 158, 0, 0.1))"},
+        {filter: "drop-shadow(30px 10px 4px rgba(240, 158, 0, 0.1))"},
+        {filter: "drop-shadow(30px 10px 4px rgba(204, 38, 27, 0.1))"},
     ]
 
     return (
@@ -65,7 +70,7 @@ const Category = () => {
             <div className={styles.categoryHolder}>
                 {list.map((item,key) => (
                     <div key={key} className={styles.categoryContainer} style={categories[key]}>
-                        <img src={item.icon.src} alt="breakfast" />
+                        <img src={item.icon.src} alt="breakfast" style={shadow[key]} />
                         <p>{item.name}</p>
                     </div>
                 ))}
