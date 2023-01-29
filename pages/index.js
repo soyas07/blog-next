@@ -2,6 +2,7 @@ import Card from '@/components/Card/Card';
 import Category from '@/components/Category/Category';
 import HeroBox from '@/components/HeroBox/HeroBox';
 import Navbar from '@/components/Navbar/Navbar';
+import Footer from '@/components/Footer/Footer';
 
 import cardImage from '@/public/assets/images/card.svg';
 
@@ -77,7 +78,7 @@ const Home = () => {
                         <h1>Simple and tasty recipes</h1>
                         <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
                     </div>
-                    <div className='recipe-card-container'>
+                    {/* <div className='recipe-card-container'>
                         {cards.map((card,key) => {
                             if (key == 5) {
                                 return (<Card key={key} type="featured" />)
@@ -93,8 +94,9 @@ const Home = () => {
                                 />
                             );
                         })}
-                    </div>
+                    </div> */}
                 </div>
+                <Footer />
             </div>
         </div>
     )
