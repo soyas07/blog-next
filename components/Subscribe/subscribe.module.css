@@ -14,19 +14,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 38.75rem;
+    width: 44.75rem;
     text-align: center;
     margin: 0 auto;
 }
 
 .subscribeTitles h1 {
     margin-bottom: 1.8rem;
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 .subscribeTitles p {
     font-size: 1rem;
     line-height: 1.75rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.7rem;
 }
 
 .subscribeTitles input {
