@@ -167,10 +167,15 @@ nav {
   height: 37.31rem;
 }
 
+.section-2 {
+  margin-bottom: 7rem;
+}
+
 .section-2-titles {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 4rem;
 }
 
 .section-2-titles h1 {
@@ -221,7 +226,12 @@ nav {
 .featured-section-insta-post {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 4rem;
+}
+
+.featured-section-insta-post img {
+  margin-bottom: 2rem;
 }
 
 .featured-section-btn {

@@ -1,0 +1,78 @@
+.subscribeContainer {
+    height: 27.625rem;
+    border-radius: 3rem;
+    background-color: var(--primary-color);
+    border: none;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 9rem;
+}
+
+.subscribeTitles {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 38.75rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.subscribeTitles h1 {
+    margin-bottom: 1.8rem;
+}
+
+.subscribeTitles p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+.subscribeTitles input {
+    padding: 2rem;
+    width: 29.68rem;
+    border: none;
+    border-radius: 1.5rem;
+    position: relative;
+    z-index: 1000;
+    outline: none;
+}
+
+.subscribeTitles input::placeholder {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.subscribeBtn {
+    position: absolute;
+    margin-top: 10.7rem;
+    margin-left: 18rem;
+    z-index: 1000;
+}
+
+.subscribeBgImage {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -18.5rem;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem
+}
+
+.saladImg,
+.plateImg {
+    /* position: absolute; */
+    width: 15rem;
+    height: 22rem;
+}
+
+.plateImg {
+    border-bottom-right-radius: 2.5rem;
+}
+
+.saladImg {
+    /* transform: translateY(-20rem); */
+    border-bottom-left-radius: 2.5rem;
+}

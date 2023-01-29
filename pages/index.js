@@ -9,6 +9,7 @@ import cardImage from '@/public/assets/images/card.svg';
 import section1Img from '@/public/assets/images/section1.svg';
 import Button from '@/components/Button/Button';
 import instaPostImg from '@/public/assets/images/instagram-post.svg';
+import Subscribe from '@/components/Subscribe/Subscribe';
 
 const Home = () => {
     const cards = [
@@ -208,6 +209,7 @@ const Home = () => {
                         ))}
                     </div>
                 </div>
+                <Subscribe />
                 <Footer />
             </div>
         </div>
