@@ -36,6 +36,34 @@ const Card = ({ type="primary", title, featureImg, timerTxt, typeTxt, marginBott
                 </div>
             </div>
         )
+    else if (type == "secondary")
+        return (
+            <div className={styles.secondaryCardContainer} style={{marginBottom}}>
+                <div className={styles.secondaryCardImg}>
+                    <img src={featureImg.src} alt="card-image" className={styles.secondaryCardFeatureImg} />
+                    <div className={styles.secondaryLikeIcon}>
+                        <img src={likeIcon.src} alt="like-icon" />
+                    </div>
+                </div>
+                <h1>{title}</h1>
+                <div className={styles.secondaryCardIcons}>
+                    <Button
+                        type="secondary"
+                        text={timerTxt}
+                        icon={clockIcon}
+                        width="6.68rem"  
+                        bgcolor='white'                  
+                    />
+                    <Button
+                        type="secondary"
+                        text={typeTxt}
+                        icon={knifeIcon}
+                        width="6.68rem"  
+                        bgcolor='white'                  
+                    />
+                </div>
+            </div>
+        )
     else if (type == "featured")
         return (
             <div className={styles.featuredContainer}>

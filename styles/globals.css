@@ -140,6 +140,7 @@ nav {
 .section-1 {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 13rem;
 }
 
 .section-1-left {
@@ -164,6 +165,68 @@ nav {
 .section-1-right img {
   width: 44.375rem;
   height: 37.31rem;
+}
+
+.section-2-titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-2-titles h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  width: 45%;
+}
+
+.section-2-titles p {
+  font-size: 1rem;
+  width: 40%;
+  line-height: 1.75rem;
+}
+
+.recipe-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.featured-section {
+  padding: 4rem 0;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(231, 249, 253, 1));
+  margin-bottom: 10rem;
+}
+
+.featured-section-titles {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+}
+
+.featured-section-titles h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.featured-section-titles p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 3rem;
+}
+
+.featured-section-insta-post {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.featured-section-btn {
+  display: flex;
+  justify-content: center;
 }
 
 

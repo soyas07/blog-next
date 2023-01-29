@@ -1,3 +1,7 @@
+.footerContainer {
+    margin-bottom: 2rem;
+}
+
 .footerContainer hr {
     opacity: 0.2;
 }
