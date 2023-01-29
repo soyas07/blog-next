@@ -107,6 +107,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 7rem;
 }
 
 .recipe-titles {
@@ -134,6 +135,35 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-1-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.section-1-left h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem
+}
+
+.section-1-left p {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: 5rem;
+}
+
+.section-1-right img {
+  width: 44.375rem;
+  height: 37.31rem;
 }
 
 

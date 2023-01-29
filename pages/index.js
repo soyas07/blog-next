@@ -5,6 +5,8 @@ import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 
 import cardImage from '@/public/assets/images/card.svg';
+import section1Img from '@/public/assets/images/section1.svg';
+import Button from '@/components/Button/Button';
 
 const Home = () => {
     const cards = [
@@ -78,7 +80,7 @@ const Home = () => {
                         <h1>Simple and tasty recipes</h1>
                         <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
                     </div>
-                    {/* <div className='recipe-card-container'>
+                    <div className='recipe-card-container'>
                         {cards.map((card,key) => {
                             if (key == 5) {
                                 return (<Card key={key} type="featured" />)
@@ -94,7 +96,23 @@ const Home = () => {
                                 />
                             );
                         })}
-                    </div> */}
+                    </div>
+                </div>
+                <div className='section-1'>
+                    <div className='section-1-left'>
+                        <h1>Everyone can be a chef in their own kitchen</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
+                        <Button 
+                            type="primary"
+                            bgcolor='#000'
+                            color="#fff"
+                            width="11.25rem"
+                            text="Learn More"
+                        />
+                    </div>
+                    <div className='section-1-right'>
+                        <img src={section1Img.src} alt="section-image" />
+                    </div>
                 </div>
                 <Footer />
             </div>
