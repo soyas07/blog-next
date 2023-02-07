@@ -9,7 +9,9 @@ import badgeIcon from '@/public/assets/icons/badge.svg';
 import styles from './herobox.module.css';
 import Author from '../Author/Author';
 
-const HeroBox = () => {
+const HeroBox = ({ author }) => {
+    const IMG_ADD = "https://storage.googleapis.com/foodieland-blog-bucket";
+    
     return (
         <div className={styles.heroboxContainer}>
             <div className={styles.leftBox}>
@@ -18,27 +20,28 @@ const HeroBox = () => {
                     text="Hot Recipes"
                     icon={recipesIcon}
                 />
-                <h1>Spicy delicious<br/>chicken wings</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
+                <h1>{author[0].title}</h1>
+                <p>{author[0].subtitle}</p>
                 <div className={styles.recipeBtnContainer}>
                     <Button 
                         type="secondary"
-                        text="30 Minutes"
+                        text={author[0].cook_time}
                         icon={timerIcon} 
                         width="8.68rem"
                         bgcolor='rgba(0,0,0,0.05)'
                     />
                     <Button 
                         type="secondary"
-                        text="Chicken"
+                        text={author[0].dish}
                         icon={forkKnifeIcon} 
-                        width="7.43rem"
+                        width="10.43rem"
                         bgcolor='rgba(0,0,0,0.05)'
                     />
                 </div>
                 <div className={styles.authorRecipeContainer}>
                     <Author
-                        name="John Smith"
+                        name={author[0].name}
+                        picture={`${IMG_ADD}/featured-images/author/${author[0].author_img}`}
                         createdDate="15 March 2022"
                     /> 
                     <Button 
@@ -50,7 +53,7 @@ const HeroBox = () => {
                 </div>
             </div>
             <div className={styles.rightBox}>
-                <img src={heroImg.src} alt="recipe-feature" width="100%" height="100%" />
+                <img src={`${IMG_ADD}/featured-images/recipe-post/${author[0].featured_image}`} alt="recipe-feature" width="100%" height="100%" />
             </div>
             <div className={styles.badgeIconContainer}>
                 <img src={badgeIcon.src} className={styles.badgeIcon} alt="recipe batch" />

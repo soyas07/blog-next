@@ -8,66 +8,14 @@ import instaIcon from '@/public/assets/icons/instagram-white.svg';
 import cardImage from '@/public/assets/images/card.svg';
 import section1Img from '@/public/assets/images/section1.svg';
 import Button from '@/components/Button/Button';
-import instaPostImg from '@/public/assets/images/instagram-post.svg';
+import instaPostImg1 from '@/public/assets/images/instagram-post-1.svg';
+import instaPostImg2 from '@/public/assets/images/instagram-post-2.svg';
+import instaPostImg3 from '@/public/assets/images/instagram-post-3.svg';
+import instaPostImg4 from '@/public/assets/images/instagram-post-4.svg';
 import Subscribe from '@/components/Subscribe/Subscribe';
 
-const Home = () => {
-    const cards = [
-        {
-            title: "Big and Juicy Wagyu Beef Cheeseburger",
-            featureImg: cardImage,
-            timerTxt: "30 Minutes",
-            typeTxt: "Snack",
-        },
-        {
-            title: "Big and Juicy Wagyu Beef Cheeseburger",
-            featureImg: cardImage,
-            timerTxt: "30 Minutes",
-            typeTxt: "Snack",
-        },
-        {
-            title: "Big and Juicy Wagyu Beef Cheeseburger",
-            featureImg: cardImage,
-            timerTxt: "30 Minutes",
-            typeTxt: "Snack",
-        },
-        {
-            title: "Big and Juicy Wagyu Beef Cheeseburger",
-            featureImg: cardImage,
-            timerTxt: "30 Minutes",
-            typeTxt: "Snack",
-        },
-        {
-            title: "Big and Juicy Wagyu Beef Cheeseburger",
-            featureImg: cardImage,
-            timerTxt: "30 Minutes",
-            typeTxt: "Snack",
-        },
-        {
-            title: "Big and Juicy Wagyu Beef Cheeseburger",
-            featureImg: cardImage,
-            timerTxt: "30 Minutes",
-            typeTxt: "Snack",
-        },
-        {
-            title: "Big and Juicy Wagyu Beef Cheeseburger",
-            featureImg: cardImage,
-            timerTxt: "30 Minutes",
-            typeTxt: "Snack",
-        },
-        {
-            title: "Big and Juicy Wagyu Beef Cheeseburger",
-            featureImg: cardImage,
-            timerTxt: "30 Minutes",
-            typeTxt: "Snack",
-        },
-        {
-            title: "Big and Juicy Wagyu Beef Cheeseburger",
-            featureImg: cardImage,
-            timerTxt: "30 Minutes",
-            typeTxt: "Snack",
-        },
-    ]
+const Home = ({ author }) => {
+    const IMG_ADD = "https://storage.googleapis.com/foodieland-blog-bucket";
 
     const recipeCards = [
         {
@@ -120,9 +68,9 @@ const Home = () => {
         },
     ]
 
-    const instaPosts = [instaPostImg, instaPostImg, instaPostImg, instaPostImg];
+    const instaPosts = [instaPostImg1, instaPostImg2, instaPostImg3, instaPostImg4];
     
-
+    console.log(author);
     return (
         <div className='main-wrapper'>
             <nav>
@@ -130,7 +78,7 @@ const Home = () => {
                 <hr style={{opacity:"0.2"}} />
             </nav>
             <div className='main-container'>
-                <HeroBox />
+                <HeroBox author={author} />
                 <Category />
                 <div className='recipe-container'>
                     <div className='recipe-titles'>
@@ -138,17 +86,19 @@ const Home = () => {
                         <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
                     </div>
                     <div className='recipe-card-container'>
-                        {cards.map((card,key) => {
-                            if (key == 5) {
+                        {author.map((card,key) => {
+                            if (key == 0)
+                                return;
+                            if (key == 6) {
                                 return (<Card key={key} type="featured" />)
                             }
                             return (
                                 <Card 
                                     key={key}
                                     title={card.title}
-                                    featureImg={card.featureImg}
-                                    timerTxt={card.timerTxt}
-                                    typeTxt={card.typeTxt}
+                                    featureImg={`${IMG_ADD}/featured-images/recipe-post/${card.featured_image}`}
+                                    timerTxt={card.cook_time}
+                                    typeTxt={card.dish}
                                     marginBottom="2rem"
                                 />
                             );
@@ -217,3 +167,12 @@ const Home = () => {
 }
 
 export default Home
+
+export async function getStaticProps(context) {
+    const response = await fetch(`http://localhost:3000/api/home`);
+    const author = await response.json();
+
+    return {
+      props: { author }, // will be passed to the page component as props
+    }
+}

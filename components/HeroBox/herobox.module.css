@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 17.7rem;
+    width: 20.7rem;
     margin-bottom: var(--fourth-bot-margin);
 }
 
@@ -75,7 +75,7 @@
     }
 
     .recipeBtnContainer {
-        width: 26rem;
+        width: 21rem;
     }
 }
 

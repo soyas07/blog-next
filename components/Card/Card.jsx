@@ -12,7 +12,7 @@ const Card = ({ type="primary", title, featureImg, timerTxt, typeTxt, marginBott
         return (
             <div className={styles.cardContainer} style={{marginBottom}}>
                 <div className={styles.cardImg}>
-                    <img src={featureImg.src} alt="card-image" className={styles.cardFeatureImg} />
+                    <img src={featureImg} alt="card-image" className={styles.cardFeatureImg} />
                     <div className={styles.likeIcon}>
                         <img src={likeIcon.src} alt="like-icon" />
                     </div>
