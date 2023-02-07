@@ -154,7 +154,6 @@ const Home = ({ author }) => {
                                 featureImg={card.featureImg}
                                 timerTxt={card.timerTxt}
                                 typeTxt={card.typeTxt}
-                                marginBottom="2rem"
                             />
                         ))}
                     </div>

@@ -111,3 +111,34 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .cardContainer,
+    .secondaryCardContainer {
+        width: 30rem;
+        height: 32rem;
+    }
+
+    .cardContainer {
+        height: 32rem;
+    }
+
+    .secondaryCardContainer {
+        height: 30rem;
+    }
+
+    .cardFeatureImg,
+    .secondaryCardFeatureImg {
+        width: 28rem;
+    }
+
+    .likeIcon,
+    .secondaryLikeIcon {
+        margin-top: -18rem;
+        margin-left: 24rem;
+    }
+
+    .secondaryCardContainer h1 {
+        text-align: center;
+    }
+}   
