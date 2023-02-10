@@ -10,7 +10,7 @@ const Button = ({ type, text, icon, width, bgcolor="black", color }) => {
         )
     } else if (type === 'secondary') {
         return (
-            <button className={`${styles.btn} ${styles.btnSecondary}`} style={{width, backgroundColor:bgcolor}}>
+            <button className={`${styles.btn} ${styles.btnSecondary}`} style={{width, backgroundColor:bgcolor, color}}>
                 {icon && <img src={icon.src} className={styles.iconSecondary}/>}
                 {text}
             </button>

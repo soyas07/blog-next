@@ -1,20 +1,22 @@
 .heroboxContainer {
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 8rem;
     justify-content: space-between;
+    max-width: 1320.6px;
 }
 
 .rightBox {
-    width: 50%;
+    max-width: 660.3px;
+    width: 100%;
 }
 
 .leftBox {
+    max-width: 660.3px;
+    width: 100%;
+    padding: 2rem;
     background-color: var(--primary-color);
     border-top-left-radius: 2.5rem;
     border-bottom-left-radius: 2.5rem;
-    padding: 2.4rem;
-    width: 50%;
 }
 
 .leftBox h1 {
@@ -31,18 +33,19 @@
 
 
 .rightBox img {
-    /* width: 50%; */
     border-top-right-radius: 2.5rem;
     border-bottom-right-radius: 2.5rem;
     height: 100%;
+    width: 100%;
 }
 
 .recipeBtnContainer {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 20.7rem;
-    margin-bottom: var(--fourth-bot-margin);
+    margin-bottom: 5rem;
+}
+
+.recipeBtnContainer button {
+    margin-right: 2rem;
 }
 
 .authorRecipeContainer {
@@ -63,7 +66,7 @@
 }
 
 
-@media only screen and (max-width: 1500px) {
+/* @media only screen and (max-width: 1500px) {
     .badgeIconContainer {
         margin-left: 37rem;
     }
@@ -77,49 +80,55 @@
     .recipeBtnContainer {
         width: 21rem;
     }
-}
+} */
 
 @media only screen and (max-width: 900px) {
     .badgeIcon {
         display: none;
     }
 
-    .leftBox,
-    .rightBox {
-        width: 100%;
-    }
-
-    .leftBox {
-        border-top-right-radius: 2.5rem;
-        border-bottom-right-radius: 2.5rem;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-
-    .rightBox {
-        display: none;
-    }
-
-    .authorRecipeContainer {
-        width: 70%;
-    }
-    
-}
-
-@media only screen and (max-width: 500px) {
-    .leftBox {
-        border-radius: 0;
+    .leftBox h1 {
+        font-size: 3rem;
     }
 
     .recipeBtnContainer {
+        margin-bottom: 3rem;
+    }  
+}
+
+@media only screen and (max-width: 780px) {
+    .recipeBtnContainer{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .leftBox h1 {
+        font-size: 2rem;
+    }
+} 
+
+@media only screen and (max-width: 660px) {
+    .leftBox p {
+        display: none;
+    }
+
+    .authorRecipeContainer div {
+        display: none;
+    }
+} 
+
+@media only screen and (max-width: 500px) {
+    .leftBox h1 {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    /* .recipeBtnContainer {
         width: 26rem;
     }
 
     .authorRecipeContainer {
         width: 80%;
-    }
-}
+    }  */
+} 

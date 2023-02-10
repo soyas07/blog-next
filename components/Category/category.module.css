@@ -15,9 +15,9 @@
 }
 
 .categoryHolder {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem;
 }
 
 .categoryContainer {
@@ -37,5 +37,22 @@
 }
 
 .categoryContainer p {
+    font-size: 1rem;
     font-weight: var(--t2-font-weight);
+}
+
+@media only screen and (max-width: 900px) {
+    .categoryHolder {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+    
+}
+
+@media only screen and (max-width: 450px) {
+    .categoryHolder {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+    
 }
