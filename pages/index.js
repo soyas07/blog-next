@@ -1,8 +1,6 @@
 import Card from '@/components/Card/Card';
 import Category from '@/components/Category/Category';
 import HeroBox from '@/components/HeroBox/HeroBox';
-import Navbar from '@/components/Navbar/Navbar';
-import Footer from '@/components/Footer/Footer';
 
 import instaIcon from '@/public/assets/icons/instagram-white.svg';
 import cardImage from '@/public/assets/images/card.svg';
@@ -16,7 +14,6 @@ import Subscribe from '@/components/Subscribe/Subscribe';
 
 const Home = ({ author }) => {
     const IMG_ADD = "https://storage.googleapis.com/foodieland-blog-bucket";
-
     const recipeCards = [
         {
             title: "Big and Juicy Wagyu Beef Cheeseburger",
@@ -67,16 +64,10 @@ const Home = ({ author }) => {
             typeTxt: "Snack",
         },
     ]
-
     const instaPosts = [instaPostImg1, instaPostImg2, instaPostImg3, instaPostImg4];
     
-    console.log(author);
     return (
-        <div className='main-wrapper'>
-            <nav>
-                <Navbar />
-                <hr style={{opacity:"0.2"}} />
-            </nav>
+        <>
             <div className='main-container'>
                 <HeroBox author={author} />
                 <Category />
@@ -90,7 +81,7 @@ const Home = ({ author }) => {
                             if (key == 0)
                                 return;
                             if (key == 6) {
-                                return (<Card key={key} type="featured" />)
+                                return (<Card key={key} type="featured" width="100%" />)
                             }
                             return (
                                 <Card 
@@ -100,6 +91,7 @@ const Home = ({ author }) => {
                                     timerTxt={card.cook_time}
                                     typeTxt={card.dish}
                                     marginBottom="2rem"
+                                    width="100%"
                                 />
                             );
                         })}
@@ -110,7 +102,7 @@ const Home = ({ author }) => {
                         <h1>Everyone can be a chef in their own kitchen</h1>
                         <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
                         <Button 
-                            type="primary"
+                            type="secondary"
                             bgcolor='#000'
                             color="#fff"
                             width="11.25rem"
@@ -154,16 +146,14 @@ const Home = ({ author }) => {
                                 featureImg={card.featureImg}
                                 timerTxt={card.timerTxt}
                                 typeTxt={card.typeTxt}
-                                marginBottom="2rem"
                             />
                         ))}
                     </div>
                 </div>
                 <Subscribe />
-                <Footer />
             </div>
-        </div>
-    )
+        </>
+    );
 }
 
 export default Home

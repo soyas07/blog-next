@@ -1,8 +1,14 @@
+import TextField from '@/components/TextField/TextField'
 import React from 'react'
 
 const Login = () => {
     return (
-        <div>Login</div>
+        <div>
+            <TextField
+                title="EMAIL ADDRESS"
+                placeholder="Enter your email..."
+            />
+        </div>
     )
 }
 

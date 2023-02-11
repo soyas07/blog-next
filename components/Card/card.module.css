@@ -1,5 +1,6 @@
 .cardContainer {
-    width: 25rem;
+    width: 100%;
+    height: auto;
     padding: 1rem;
     border-radius: 2rem;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(231, 249, 253, 1));
@@ -21,7 +22,7 @@
 }
 
 .cardFeatureImg {
-    width: 23rem;
+    width: 100%;
     border-radius: 1.5rem;
 }
 
@@ -31,8 +32,8 @@
     align-items: center;
     border-radius: 100%;
     padding: .7rem;
-    margin-top: -15rem;
-    margin-left: 19rem;
+    margin-top: -65%;
+    margin-left: 85%;
     background-color: white;
     /* margin-right: -5rem; */
 }
@@ -52,7 +53,7 @@
 
 /* Secondary variant */
 .secondaryCardContainer {
-    width: 18.125rem;
+    width: 100%;
     padding: 1rem;
     /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(231, 249, 253, 1)); */
 }
@@ -88,8 +89,8 @@
     align-items: center;
     border-radius: 100%;
     padding: .5rem;
-    margin-top: -10.5rem;
-    margin-left: 13rem;
+    margin-top: -65%;
+    margin-left: 85%;
     background-color: white;
 }
 
@@ -101,13 +102,12 @@
 
 /* Featured variant */
 .featuredContainer img {
-    height: 26rem;
-    width: 25rem;
+    height: auto;
+    width: 100%;
 }
 
-
-@media only screen and (max-width: 1240px) {
-    .cardIcons {
-        width: 100%;
+@media only screen and (max-width: 850px) {
+    .secondaryLikeIcon {
+        margin-left: 87%;
     }
 }

@@ -1,0 +1,14 @@
+.textFieldContainer h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.textFieldContainer input {
+    font-size: 1rem;
+    height: 3.75rem;
+    border-radius: 1rem;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 1.5rem;
+}

@@ -7,7 +7,7 @@ import likeIcon from '@/public/assets/icons/like.svg';
 import featuredAdsImage from '@/public/assets/images/featured-ads.svg';
 import Button from '../Button/Button';
 
-const Card = ({ type="primary", title, featureImg, timerTxt, typeTxt, marginBottom }) => {
+const Card = ({ type="primary", title, featureImg, timerTxt, typeTxt, marginBottom, width }) => {
     if (type == "primary")
         return (
             <div className={styles.cardContainer} style={{marginBottom}}>
@@ -38,7 +38,7 @@ const Card = ({ type="primary", title, featureImg, timerTxt, typeTxt, marginBott
         )
     else if (type == "secondary")
         return (
-            <div className={styles.secondaryCardContainer} style={{marginBottom}}>
+            <div className={styles.secondaryCardContainer} style={{marginBottom, width}}>
                 <div className={styles.secondaryCardImg}>
                     <img src={featureImg.src} alt="card-image" className={styles.secondaryCardFeatureImg} />
                     <div className={styles.secondaryLikeIcon}>
@@ -66,7 +66,7 @@ const Card = ({ type="primary", title, featureImg, timerTxt, typeTxt, marginBott
         )
     else if (type == "featured")
         return (
-            <div className={styles.featuredContainer}>
+            <div className={styles.featuredContainer} style={{width}}>
                 <img src={featuredAdsImage.src} alt="featured-image" />
             </div>
         )
