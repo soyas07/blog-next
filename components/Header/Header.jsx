@@ -2,9 +2,9 @@ import React from 'react';
 import Button from '../Button/Button';
 import styles from './header.module.css';
 
-const Header = ({ title, subtitle, placeholder }) => {
+const Header = ({ title, subtitle, placeholder, margin }) => {
     return (
-        <div className={styles.headerContainer}>
+        <div className={styles.headerContainer} style={{marginBottom:margin}}>
             <h1>{title}</h1>
             <p>{subtitle}</p>
             <input type="text" placeholder={placeholder} />
