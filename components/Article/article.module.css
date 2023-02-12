@@ -1,0 +1,42 @@
+.recipeContainer,
+.authorConatainer {
+    display: flex;
+    align-items: center;
+}
+
+.leftContent {
+    width: 50%;
+    margin-right: 2rem;
+}   
+
+.leftContent img {
+    border-radius: 1.5rem;
+}
+
+.rightContent h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.rightContent p {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.verticleLine {
+    height: 2.5rem;
+    width: 2px;
+    background-color: rgba(0,0,0,0.1);
+    margin: 0 2rem;
+}
+
+.authorConatainer span {
+    font-size: 0.875rem;
+}
+
+@media only screen and (max-width: 550px) {
+    .rightContent p {
+        display: none;
+    }
+}
