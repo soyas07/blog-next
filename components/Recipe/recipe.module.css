@@ -1,0 +1,22 @@
+.recipeContainer {
+    display: flex;
+    align-items: center;
+}
+
+.recipeLeftContent {
+    width: 75%;
+    margin-right: 1rem;
+}
+
+.recipeLeftContent img {
+    border-radius: 1.25rem;
+}
+
+.recipeRightContent h1 {
+    font-size: 1.25rem;
+    margin-bottom: .7rem;
+}
+
+.recipeRightContent p {
+    font-size: 0.875rem;
+}

@@ -2,9 +2,13 @@ import Header from '@/components/Header/Header';
 import Article from '@/components/Article/Article';
 import React from 'react';
 import styles from './blog.module.css';
+import Recipe from '@/components/Recipe/Recipe';
+
+import adImg from '@/public/assets/images/featured-ads.svg';
 
 const Blog = () => {
-    const recipeList = [1, 2, 3, 4, 5];
+    const articleList = [1, 2, 3, 4, 5];
+    const recipeList = [1, 2, 3];
 
     return (
         <div className={`${styles.blogContainer} main-container`}>
@@ -18,9 +22,13 @@ const Blog = () => {
             </div>
             <div className={styles.recipeContainer}>
                 <div className={styles.article}>
-                    {recipeList.map((recipe) => <Article margin="2rem" />)}
+                    {articleList.map(() => <Article margin="2rem" />)}
                 </div>
-                <div className={styles.recipes}></div>
+                <div className={styles.recipes}>
+                    <h1>Tasty Recipes</h1>
+                    {recipeList.map(() => <Recipe margin="1rem" />)}
+                    <img className={styles.adImage} src={adImg.src} alt="ad-image" width="100%" />
+                </div>
             </div>
             <div className={styles.pagination}></div>
             <div className={styles.subscribe}></div>
