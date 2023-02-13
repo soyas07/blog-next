@@ -1,0 +1,42 @@
+.paginationContainer {
+    display: flex;
+    padding: 5rem 0;
+    justify-content: center;
+}
+
+.paginationContainer .pageBtn,
+.paginationBtn {
+    padding: 1.4rem 0;
+    width: 3.7rem;    
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 1rem;
+    transition: background-color 0.2s ease;
+    margin-right: 1rem;
+}
+
+.paginationContainer .pageBtn:hover,
+.paginationBtn:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+} 
+
+.paginationBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.icon {
+    filter: invert(0.6)
+}
+
+.active {
+    background-color: black;
+    color: white
+}
+
+.neutral {
+    background-color: white;
+}
