@@ -5,6 +5,7 @@ import styles from './blog.module.css';
 import Recipe from '@/components/Recipe/Recipe';
 
 import adImg from '@/public/assets/images/featured-ads.svg';
+import Pagination from '@/components/Pagination/Pagination';
 
 const Blog = () => {
     const articleList = [1, 2, 3, 4, 5];
@@ -30,7 +31,9 @@ const Blog = () => {
                     <img className={styles.adImage} src={adImg.src} alt="ad-image" width="100%" />
                 </div>
             </div>
-            <div className={styles.pagination}></div>
+            <div className={styles.pagination}>
+                <Pagination />
+            </div>
             <div className={styles.subscribe}></div>
         </div>
     )
