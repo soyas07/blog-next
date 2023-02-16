@@ -6,6 +6,7 @@ import Recipe from '@/components/Recipe/Recipe';
 
 import adImg from '@/public/assets/images/featured-ads.svg';
 import Pagination from '@/components/Pagination/Pagination';
+import Subscribe from '@/components/Subscribe/Subscribe';
 
 const Blog = () => {
     const articleList = [1, 2, 3, 4, 5];
@@ -34,7 +35,9 @@ const Blog = () => {
             <div className={styles.pagination}>
                 <Pagination />
             </div>
-            <div className={styles.subscribe}></div>
+            <div className={styles.subscribe}>
+                <Subscribe />
+            </div>
         </div>
     )
 }
