@@ -26,7 +26,7 @@
     padding-left: 2rem;
 }
 
-.recipes h1 {
+.titleHeader {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 2rem;
@@ -44,18 +44,42 @@
     
 }
 
+.btmRecipe {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.titleRecipe {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+
 @media only screen and (max-width: 900px) {
+    .article {
+        margin-bottom: 4rem;
+    }
+
     .recipeContainer {
         flex-wrap: wrap;
     }
 
     .recipes {
-        width: 40%;
+        width: 50%;
+        padding-left: 0;
+    }
+
+    .btmRecipe {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media only screen and (max-width: 650px) {
     .recipes {
-        width: 100%;
+        width: 60%;
     }
+
 }
